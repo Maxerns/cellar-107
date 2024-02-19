@@ -1,0 +1,173 @@
+body {
+    position: relative;
+    background-image: url("/src/assets/woodovenpizza.gif");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    z-index: -1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the last value (0.5) for the desired opacity */
+    z-index: -1;
+}
+
+.app__wrapper {
+    width: 100%;
+    justify-content: center;
+}
+
+
+.app__header button {
+    background-color: rgba(0, 0, 0, 0.5);
+      color: var(--color-cream);
+      font-family: var(--font-messi);
+      font-weight: 100;
+      letter-spacing: 0.04em;
+      line-height: 28px;
+      font-size: 16px;
+      padding: 0.5rem 1.5rem;
+      border: 2px solid;
+      border-color: rgba(255, 255, 255, 0.1);
+      outline: none;
+      cursor: pointer;
+      align-self: center;
+      margin: 0 auto;
+  }
+
+.app__header-h1 {
+    font-family: var(--font-messi);
+    color: var(--color-cream);
+    letter-spacing: 0.10em;
+    line-height: 10px;
+    font-weight: 900;
+    font-size: 100px;
+    align-self: center;
+    
+}
+
+.app__address {
+    color: var(--color-white);
+    font-family: var(--font-diphy);
+    align-self: center;
+    padding: 2rem;
+    font-size: 26px;
+    font-style: italic;
+    margin: 0 auto;
+    font-weight: 100;
+    padding-left: 22rem;
+}
+
+.app__wrapper_info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-size: 145%;
+        background-position-x: -220px ;
+    }
+
+    
+  }
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+    body {
+        background-size: 189%;
+        background-position-x: -320px;
+        
+    }
+
+    .app__wrapper_info {
+        padding-right: 2.5rem;
+    }
+    
+    .app__header-h1 {
+        font-size: 80px;
+        padding-left: 3rem;
+    }
+    .app__address {
+        font-size: 20px;
+        padding-left: 12rem;
+    }
+
+    .app__header button {
+        font-size: 14px;
+        padding: 0.3rem 1rem;
+        
+            
+        
+    }
+   }
+      
+ 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-size: 300%;
+        background-position-x: -320px;
+        
+    }
+
+    .app__wrapper_info {
+        padding-right: 2.5rem;
+    }
+    
+    .app__header-h1 {
+        font-size: 80px;
+        padding-left: 3rem;
+    }
+    .app__address {
+        font-size: 20px;
+        padding-left: 7rem;
+    }
+
+    .app__header button {
+        font-size: 14px;
+        padding: 0.3rem 1rem;
+        
+            
+        
+    }
+}
+
+
+@media only screen and (max-width: 767px)  {
+    
+    body {
+        
+        background-size: 440%;
+        background-position-x: -400px;
+        
+    }
+
+    .app__wrapper_info {
+        padding-right: 2.5rem;
+    }
+    
+    .app__header-h1 {
+        font-size: 60px;
+        padding-left: 3rem;
+    }
+    .app__address {
+        font-size: 16px;
+        padding-left: 3rem;
+    }
+
+    .app__header button {
+        font-size: 14px;
+        padding: 0.3rem 1rem;
+        
+            
+        
+    }
+
+}
+
